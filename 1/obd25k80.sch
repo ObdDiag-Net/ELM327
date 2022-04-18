@@ -13631,8 +13631,7 @@ naming: grid - package width</description>
 <wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-16.51" x2="10.16" y2="19.05" width="0.254" layer="94"/>
 <wire x1="10.16" y1="19.05" x2="2.54" y2="19.05" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="19.05" x2="-2.54" y2="19.05" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="19.05" x2="2.54" y2="19.05" width="0.254" layer="94" curve="180"/>
+<wire x1="-10.16" y1="19.05" x2="2.54" y2="19.05" width="0.254" layer="94"/>
 <text x="-4.445" y="19.685" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.445" y="-19.05" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="_MCLR" x="-12.7" y="17.78" length="short"/>
