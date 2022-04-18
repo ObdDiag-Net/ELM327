@@ -13626,13 +13626,12 @@ naming: grid - package width</description>
 </package>
 </packages>
 <symbols>
-<symbol name="PIC18F25K80">
+<symbol name="PIC18F25K80-2">
 <wire x1="-10.16" y1="19.05" x2="-10.16" y2="-16.51" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-16.51" x2="10.16" y2="19.05" width="0.254" layer="94"/>
 <wire x1="10.16" y1="19.05" x2="2.54" y2="19.05" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="19.05" x2="-2.54" y2="19.05" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="19.05" x2="2.54" y2="19.05" width="0.254" layer="94" curve="180"/>
+<wire x1="-10.16" y1="19.05" x2="2.54" y2="19.05" width="0.254" layer="94"/>
 <text x="-4.445" y="19.685" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.445" y="-19.05" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="_MCLR" x="-12.7" y="17.78" length="short"/>
@@ -13641,7 +13640,7 @@ naming: grid - package width</description>
 <pin name="RA2" x="-12.7" y="10.16" length="short"/>
 <pin name="RA3" x="-12.7" y="7.62" length="short"/>
 <pin name="VCAP" x="-12.7" y="5.08" length="short" direction="pas"/>
-<pin name="RA5" x="-12.7" y="2.54" length="short"/>
+<pin name="C2INB" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="VSS@2" x="-12.7" y="0" length="short" direction="pwr"/>
 <pin name="OSC1" x="-12.7" y="-2.54" length="short"/>
 <pin name="OSC2" x="-12.7" y="-5.08" length="short"/>
@@ -13659,20 +13658,22 @@ naming: grid - package width</description>
 <pin name="RB1" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="CANTX" x="12.7" y="5.08" length="short" rot="R180"/>
 <pin name="CANRX" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="RB4" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="C2INA" x="12.7" y="10.16" length="short" direction="in" rot="R180"/>
 <pin name="RB5" x="12.7" y="12.7" length="short" rot="R180"/>
 <pin name="RB6" x="12.7" y="15.24" length="short" rot="R180"/>
 <pin name="RB7" x="12.7" y="17.78" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PIC18F25K80" prefix="IC">
+<deviceset name="PIC18F25K80-2" prefix="IC">
 <gates>
-<gate name="G$1" symbol="PIC18F25K80" x="0" y="0"/>
+<gate name="G$1" symbol="PIC18F25K80-2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIL28">
 <connects>
+<connect gate="G$1" pin="C2INA" pad="25"/>
+<connect gate="G$1" pin="C2INB" pad="7"/>
 <connect gate="G$1" pin="CANRX" pad="24"/>
 <connect gate="G$1" pin="CANTX" pad="23"/>
 <connect gate="G$1" pin="OSC1" pad="9"/>
@@ -13681,10 +13682,8 @@ naming: grid - package width</description>
 <connect gate="G$1" pin="RA1" pad="3"/>
 <connect gate="G$1" pin="RA2" pad="4"/>
 <connect gate="G$1" pin="RA3" pad="5"/>
-<connect gate="G$1" pin="RA5" pad="7"/>
 <connect gate="G$1" pin="RB0" pad="21"/>
 <connect gate="G$1" pin="RB1" pad="22"/>
-<connect gate="G$1" pin="RB4" pad="25"/>
 <connect gate="G$1" pin="RB5" pad="26"/>
 <connect gate="G$1" pin="RB6" pad="27"/>
 <connect gate="G$1" pin="RB7" pad="28"/>
@@ -18214,7 +18213,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="IC3" library="v-reg" deviceset="78LXX" device="" value="78L05"/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="IC1" library="pic18f2455" deviceset="PIC18F25K80" device=""/>
+<part name="IC1" library="pic18f2455" deviceset="PIC18F25K80-2" device="" value="PIC18F25K80"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="D6" library="led" deviceset="LED" device="5MM"/>
@@ -18373,8 +18372,8 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="213.868" y="142.494" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="IC1" gate="G$1" x="73.66" y="114.3" smashed="yes">
-<attribute name="NAME" x="69.215" y="133.985" size="1.778" layer="95"/>
-<attribute name="VALUE" x="69.215" y="95.25" size="1.778" layer="96"/>
+<attribute name="NAME" x="71.755" y="134.747" size="1.778" layer="95"/>
+<attribute name="VALUE" x="66.167" y="93.98" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V3" gate="G$1" x="60.96" y="177.8" smashed="yes">
 <attribute name="VALUE" x="58.42" y="172.72" size="1.778" layer="96" rot="R90"/>
@@ -19233,7 +19232,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="RA5" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RA5"/>
+<pinref part="IC1" gate="G$1" pin="C2INB"/>
 <wire x1="60.96" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
 <label x="45.72" y="116.84" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -19249,7 +19248,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="J+DIV" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RB4"/>
+<pinref part="IC1" gate="G$1" pin="C2INA"/>
 <wire x1="86.36" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
 <label x="88.9" y="124.46" size="1.4224" layer="95" xref="yes"/>
 </segment>
