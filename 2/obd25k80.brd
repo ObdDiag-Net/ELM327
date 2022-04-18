@@ -2691,7 +2691,7 @@ design rules under a new name.</description>
 <wire x1="38.862" y1="17.907" x2="36.83" y2="19.939" width="0.254" layer="16"/>
 <wire x1="36.83" y1="19.939" x2="36.83" y2="20.32" width="0.254" layer="16"/>
 </signal>
-<signal name="RA5">
+<signal name="C2INB">
 <contactref element="IC1" pad="7"/>
 <contactref element="R8" pad="2"/>
 <contactref element="R7" pad="2"/>
