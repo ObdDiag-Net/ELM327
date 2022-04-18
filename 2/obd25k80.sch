@@ -18391,7 +18391,7 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="82.55" y="160.782" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND1" gate="1" x="48.26" y="88.9" smashed="yes"/>
-<instance part="GND5" gate="1" x="55.88" y="114.3" smashed="yes" rot="R270"/>
+<instance part="GND5" gate="1" x="58.42" y="114.3" smashed="yes" rot="R270"/>
 <instance part="C9" gate="G$1" x="134.62" y="154.94" smashed="yes">
 <attribute name="NAME" x="136.144" y="157.099" size="1.778" layer="95"/>
 <attribute name="VALUE" x="134.62" y="148.463" size="1.778" layer="96"/>
@@ -18628,7 +18628,6 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSS@2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="58.42" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
