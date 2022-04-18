@@ -18848,7 +18848,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="J2" gate="G$1" pin="7"/>
 <wire x1="238.76" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="76.2" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
-<label x="237.236" y="74.422" size="1.778" layer="95"/>
 <label x="238.76" y="68.58" size="1.4224" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
