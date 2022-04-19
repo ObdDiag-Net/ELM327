@@ -191,7 +191,7 @@
 <wire x1="96.52" y1="0" x2="96.52" y2="50.8" width="0" layer="20"/>
 <wire x1="96.52" y1="50.8" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0" layer="20"/>
-<text x="-15.367" y="49.149" size="1.778" layer="25">ObdDiag.Net</text>
+<text x="12.573" y="46.609" size="1.778" layer="25">ObdDiag.Net</text>
 </plain>
 <libraries>
 <library name="led">
