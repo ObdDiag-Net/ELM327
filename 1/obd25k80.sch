@@ -18221,8 +18221,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
-<part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="IC2" library="obddiag-net" deviceset="MCP2562" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
@@ -18265,7 +18263,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="Q3" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BC547" device="" package3d_urn="urn:adsk.eagle:package:29732/3"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="22K"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="18K"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="47K"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
@@ -18401,11 +18399,6 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="136.144" y="157.099" size="1.778" layer="95"/>
 <attribute name="VALUE" x="134.62" y="148.463" size="1.778" layer="96"/>
 </instance>
-<instance part="C12" gate="G$1" x="152.4" y="147.32" smashed="yes">
-<attribute name="NAME" x="147.32" y="148.971" size="1.778" layer="95"/>
-<attribute name="VALUE" x="145.034" y="141.097" size="1.778" layer="96"/>
-</instance>
-<instance part="GND15" gate="1" x="152.4" y="139.7" smashed="yes"/>
 <instance part="IC2" gate="G$1" x="172.72" y="152.4" smashed="yes">
 <attribute name="NAME" x="167.894" y="166.37" size="1.778" layer="95"/>
 <attribute name="VALUE" x="166.37" y="141.224" size="1.778" layer="96"/>
@@ -18659,10 +18652,6 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="C12" gate="G$1" pin="2"/>
-<pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
@@ -18947,9 +18936,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="160.02" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="162.56" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="162.56" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
-<junction x="152.4" y="162.56"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
